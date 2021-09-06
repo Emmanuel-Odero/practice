@@ -1,0 +1,46 @@
+		FIRST SETTING UP GIT TO CONNECT WITH GITHUB
+=>To check if git is already installed we type "git version"
+=>Next step is to configure your git credentials. This should be the first step
+	->git config --global user.name 'name'
+	->git config --global user.email 'email'
+	->git config --global --list         #this list all the settings on git
+
+	FIRST STEP TO TRACKING A FILE IN YOUR LOCAL MACHINE
+=>Now it's time to initiate git on a directory we would like to work on 
+	-> git init
+=>Now check the status of your files for those that have not been updated and even chaneges made
+	->git status
+=>Add the changes to the staging area.
+	->git add ./git add -A #add all the changes to the staging area this can take specific file also
+	NB: To remove from the staging area we do "git reset <file or all>"
+=>To add all changes and commit changes
+	->git add . #this will first add the changes to the staging area
+	->git commit -m 'just a new change'
+=>After These commits have been added we now create a file online and name it for example practice.
+Add the URL copied, which is your remote repository to where your local content from your repository is pushed.
+	->git remote add origin 'your_url_name' NB:Original is the remote name
+
+=>We can download projects from remote computers and clone them to our local computer and this 
+  can be done through either SSH or HTTP. Note that this cloned will inherit all the git features from 
+  the original git.
+	->git clone <link of the project you would like to clone>
+=>we can switch branches in git and this is how if in another branch we would branch to the master
+	->git checkout /<name-of-branch>
+=>Add a remote repository
+	->git remote add <source-name (remote name)> <repository-path>
+=>To create a branch
+	->git checkout -b <name-of-branch>
+=>To view the branches 
+	->git branch
+
+=>Delete a branch locally
+	->git branch -d localbranchname
+=>Delete a branch remotely
+	->git push origin --delete remoteBranchName
+=>To merge a branch with master branch
+	->git checkout <name-of-branch>
+	->git merge master
+
+
+
+

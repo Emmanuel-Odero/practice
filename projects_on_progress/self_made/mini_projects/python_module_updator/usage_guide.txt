@@ -1,0 +1,6 @@
+This mini-programme is designed to read a file containg modules  obtained 
+from running "pip freeze >> filename". Running this command saves the modules
+with their version number. To make this file flexible we convert it to a form
+without the versions using version_remover.py. On running this file another one
+gets created which can be used to create bath download. The file created is
+called cleaned_modules.txt

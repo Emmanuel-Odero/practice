@@ -1,0 +1,13 @@
+=> Below is a list of techniques to consider while feature engineering
+	- Handling missing values.
+	- Handling outliers which can be achieved using standard deviation or percentiles
+	- Bin for both categorical and numeric data but note that by this you sacrifice info and you make your data more regularized.
+	- Log transform to reflect the magnitudal difference. Data you perform log transform on should be positive.
+	- Encoding categorical variables
+	- Categorical column grouping where we can make use of pivot tables
+	- Feature splitting
+	- Scaling which we can either use normalization or standardization. not that normalization is sensitive to outliers
+	- Extracting date column using the following ways for easier understanding by the machine learnin algorithm
+		* Extract the parts of the date into different columns year, month, day, etc
+		* Extract the time period between the current date and columns in terms of years, months, days, etc
+		* Extract some specific features from the date like weekday, weekend, holiday 

@@ -1,0 +1,3 @@
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\obj\x86\Debug\VB hello world.exe
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\obj\x86\Debug\VB hello world.xml
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\obj\x86\Debug\VB hello world.pdb

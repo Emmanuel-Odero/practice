@@ -1,0 +1,4 @@
+-Revise on how to install Basemap comfortable 
+-Understand all of the projection types
+-what does all the mpl_toolkits.basemap.Basemap() arguments mean.
+-

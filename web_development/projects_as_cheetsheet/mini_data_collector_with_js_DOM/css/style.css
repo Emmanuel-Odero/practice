@@ -1,0 +1,19 @@
+
+
+.main-header {
+	background: black;
+	text-align: center;
+	color: white;
+}
+
+.error {
+	background: orangered;
+	color: #fff;
+	padding: 5px;
+	margin: 5px;
+}
+
+#registrationForm{
+	padding-left: 300px;
+	padding-right: 150px;
+}

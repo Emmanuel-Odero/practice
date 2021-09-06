@@ -1,0 +1,12 @@
+pip help #to see the commands available
+pip help install #to see the help on install
+pip search pandas  #used to search a package over the internet
+pip show pandas #will show details of the installed packages
+pip list #shows the list of installed packages
+pip uninstall pandas #will remove the pandas package
+pip list -o / pip list --outdated #lists the packages that aren't running the current version
+pip install -U pandas #this is how to upgrade pandas package
+pip freeze #lists our packages in requirements format
+pip install -r requirements.txt  # used to install from the requirements file and the r means -r read from file
+
+

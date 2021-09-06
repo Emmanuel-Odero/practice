@@ -1,0 +1,33 @@
+﻿US Mass Shootings
+
+
+Context
+Mass Shootings in the United States of America (1966-2017) The US has witnessed 398 mass shootings in the last 50 years that resulted in 1,996 deaths and 2,488 injured. The latest and the worst mass shooting of October 2, 2017, killed 58 and injured 515 so far. The number of people injured in this attack is more than the number of people injured in all mass shootings of 2015 and 2016 combined. The average number of mass shootings per year is 7 for the last 50 years that would claim 39 lives and 48 injured per year.
+
+
+Content
+Geography: United States of America
+Time period: 1966-2017
+Unit of analysis: Mass Shooting Attack
+Dataset: The dataset contains detailed information of 398 mass shootings in the United States of America that killed 1996 and injured 2488 people.
+Variables: The dataset contains Serial No, Title, Location, Date, Summary, Fatalities, Injured, Total Victims, Mental Health Issue, Race, Gender, and Lat-Long information.
+
+
+Dataset
+Dataset [Link]
+
+
+Questions
+1. How many people got killed and injured per year?
+2. Visualize mass shootings in the U.S map.
+3. Is there any correlation between a shooter and his/her race, gender
+4. Any correlation with calendar dates? Do we have more deadly days, weeks or months on average?
+5. What cities and states are more prone to such attacks?
+6. Can you find and combine any other external datasets to enrich the analysis, for example, gun ownership by state.
+7. Any other pattern you see that can help in prediction, crowd safety or in-depth analysis of the event.
+8. How many shooters have some kind of mental health problem? Can we compare that shooter with the general population with the same condition?
+
+
+
+
+Source: [Link]

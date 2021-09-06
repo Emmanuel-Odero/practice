@@ -1,0 +1,8 @@
+We can use jupyter notebook markdown to write HTML code. This accepts html commands and displays in this formart.
+If we want to run a command like in the shell we start the line with an exclamation mark. "!pip list".
+Magic commands are specified using percent sign and a single one means all the commands will come from the same line. Two percents mean the entire cell will be used as commands and these are called cell magics. Example "lsmagic" which lists all the commands we are to use.
+One of the most comman magic commands we will see are %matplotlib inline. This allows matplotlib chat to be displayed within our notebook
+%%HTML allows us to write html code that will be displayed in the notebook. We also have one for javascript which when defined will allow us to write javascript in the entire cell.
+%%timeit is used to time our python code.
+It is important to note that we can download the notebook files in any format like HTML, python etc. We can also read the .ipynb file from the command line but this will just be a json file formart.
+We can see how other people are using jupyter notebook in ipython github page.

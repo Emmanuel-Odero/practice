@@ -1,0 +1,7 @@
+	Best Images for Website
+-pexels.com
+
+	Flexbox Explanations and Tricks
+-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+-flexboxfroggy.com #this is a game site to mastering flexbox properties
+

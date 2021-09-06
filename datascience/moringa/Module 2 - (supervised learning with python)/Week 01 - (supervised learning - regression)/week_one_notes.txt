@@ -1,0 +1,71 @@
+- Our typical workflow throughout this module will be like this:
+	* Identify and clean a data set.
+	* Run descriptive analytics to identify patterns in the data, and decide which supervised learning algorithmn to use.
+	* Create a training data set to create our model.
+	* Assess how good our model is.
+	* Perform our predictions
+
+	LINEAR REGRESSION
+- Regression algorithms try to identify the line of best fit, a line which minimizes how far away all the points in our graph are from it.
+- Remember from high school the formula for a line equation "y=mx + b" linear regression algorithmns will seek to find optimal values for m(the slope of the line) 
+ and b(the intercept, also known as the bias). This line equation should then allow us to compute a value for y, our dependent variable, so long as we have some 
+ input x.
+- With only one independent variable, this is the equation of a line, with 2 this becomes the equation of a 2d plane in 3 dimensions etc.
+- What is the best value for m and b? A first step to optimizing m and b is to create an error function (often referred to as cost function as well) to assess
+ how good our line y=mx + b is.
+- Gradient descent algorithms pick an initial value for m and b , then compute the error. From then on, they compute the slope (or gradient) at that point, then move
+ towards new values for m and b that are "downhill| from where they started.
+- How much m and b change from an iteration to the next is based on the learning rate.
+- Common variants of gradient descent are batch, stochastic and mini-batch.
+- In splitting data we use sklearn.model_select.train_test_split takes an argument of random_state which if is a fixed value will guarantee that same sequence of random numbers are generated each time you run the code. And unless there is some other randomness present in the process, the results produced will be same as always. This helps in verifying the output.
+
+- Mean Absolute Error (MAE) and Root mean squared error (RMSE) are two of the most common metrics used to measure accuracy for continous variables.
+- MAE measures the average magnitude of the errors in a set of predictions, without considering their direction. It's the average over the test sample of the absolute
+differences between prediction and actual observation where all individual differences have equal weight. In short we find the sum of absolute differences btwn actual 
+and predicted. If the absolute value is not taken (the signs of the errors are not removed), the average error becomes the mean bias error (MBE) and is usually 
+intended to measure average model bias. MBE can convey useful information, but should be interpreted cautioylsy because positive and negative errors will cancel out. RMSE is quadratic scoring rule that also measures the average magnitude of the error. It's the square root of the average of squared differences between prediction and actual observation.
+-Similarities of MAE and RMSE is that both express average model prediction error in units of the variable of interest. Both metrics can range from 0 to infinity and are indifferent to the direction of errors. They are negatively-oriented scores, which means lower values are better.
+- Taking the square root of the average squared errors has some interesting implications for RMSE. Since the errrors are squared before they are averaged, the RMSE 
+gives a relatively high weight to large errors.
+
+	LINEAR REGRESSION OPTIMIZATION - CROSS VALIDATION
+- Sometimes we may be working with small datasets and issues of bias might arise so we need to find a way around this problem. One of the solutions is called k-fold 
+cross validation. K-fold will split our data in n separate chunks called folds. This helps us identify potential bias and challenges by using each fold in turn as the
+test set.
+-For example if we have 5 folds we will have 5 models where the first model uses the first fold as the test set then the rest as the training set. Typically we would
+like to see all the models perform the roughly the same. If we had 5 models where four predicted an accuracy level of 85% and the last one gives 50% accuracy then we 
+note a potential problem with the algo in use since it doesn't generalise well in all the 5 instances. 
+NB: k-fold cross validation is a resampling procedure used to evaluate machine learning models on a limited data sample. Also bear in mind that k-fold cross-validation
+can apply to any and all the supervised learning algorithms not only linear regression.
+-The reason to do cross validation is for tunning of parameters. 
+
+	LINEAR REGRESSION OPTIMIZATION - BEST PRACTICES
+1) Encoding Categorical Features
+- First assuming we have categorical variables we would like to use in our model. To use these variables we will have to encode them to numeric form to enable use in 
+machine learning. If we have two categorical variables then we will encode as binary values 1 and 0. If we have more than two categorical variables then we will 
+have to use various methods as discussed belowa.
+- We will look at three ways of encoding categorical features. LabelEncoder and OneHotEncoder, DictVectorizer and pandas get_dummies.
+-LabelEncoder converts each class under specified feature to a numerical value. It is advisable to be used on binary categorical variables and not multiclassed categorical
+variables.
+-OneHotEncoding allows application to multiclassed categorical variables. Note that the output is a numpy array not a dataframe. For each class under a categorical
+feature a column is created. 
+NB: As a first choise in encoding we will go for pandas get_dummies then maybe dictVectorizer if the categorical variables are many since it supports sparse matrix 
+output
+
+2) Multilinearity
+-Multicollinearity occurs when two or more independent variables are highly correlated with one another in a regression model. This means that an independent variable
+can be predicted from another independent variable in a regresssion model.
+- One of our fundemental assumptions when performing multivariate linear regression is that our independent variables are truly independent. They must not be strongly 
+related to each other. 
+-Variance Inflation Factor (VFI) is the measure of how much the variace of a regression coefficient in your model increases if your independent variables are correlated
+. If no independent variable is correlated you will expect the VIF to be 1.VIF around 5 are considered problematic and 10 should mean that the problem is very serious
+and suggests that the variables should be dropped from the model.
+-Note that high multicollinearity does not make for a bad predictive model, rather it posses the following challenges
+	* model may be trained inefficiently, you may get similar perfomance faster by not using the highly correlated varables.This is more relevant the more your 
+	  data grows.
+	* The coefficients of your variables may not be useful to interpret. If the interest is not only prediction the dependent variable but to also understand how 
+	  various independent variables contribute to it, then you should conduct a multicollinerly check before assessing the coeffiecients.
+
+3) Residual plots and Heteroskedasticity test
+- Residual plots are a powerful tool used to assess the correctness of our model. On the x-axis we will have the predicted values of the model and on y-axis we wil 
+have the difference btwn the actual values and predicted valuses. Known as the residual. 

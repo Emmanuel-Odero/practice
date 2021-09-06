@@ -1,0 +1,16 @@
+C:\Users\User\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\User\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\User\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.xml
+C:\Users\User\AppData\Local\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.Resources.resources
+C:\Users\User\AppData\Local\Temporary Projects\ConsoleApplication1\obj\x86\Debug\VB hello world.vbproj.GenerateResource.Cache
+C:\Users\User\AppData\Local\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\User\AppData\Local\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.xml
+C:\Users\User\AppData\Local\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\bin\Debug\VB hello world.exe
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\bin\Debug\VB hello world.pdb
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\bin\Debug\VB hello world.xml
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\obj\x86\Debug\ConsoleApplication1.Resources.resources
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\obj\x86\Debug\VB hello world.vbproj.GenerateResource.Cache
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\obj\x86\Debug\VB hello world.exe
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\obj\x86\Debug\VB hello world.xml
+C:\Users\User\Desktop\personalFiles\visualBasic\projects\VB hello world\VB hello world\obj\x86\Debug\VB hello world.pdb

@@ -1,0 +1,73 @@
+	FLEXBOX ARCHITECTURE
+-No floats.
+-Responsive and mobile friendly.
+-Flex Container's margins do not collapse with the margins of its content.
+-Order of elements can easily be changed without editing the source HTML.
+-The ability to alter item width and height to best fit in its containers available free space.
+-Flexbox is direction-agnostic.
+-Built for small-scale layouts while the upcoming 'Grid' specification is for more large scale.
+
+	FLEXBOX FEATURES AT A GLANCE
+
+		display: flex | inline-flex
+-This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+
+		flex-direction: row | column  (default=row)
+-Row will make the child blocks of the flexed container in row form
+-column will make these child flexboxes in column style. 
+NB:The blocks in row can have a property of width instead and this is best presented in percentages.
+
+		align-items:  flex-start | flex-end | center | stretch (default)
+- Align-items controls the alignment of items on the cross-axis.
+
+		align-content: flex-start | flex-end | center | space-around | space-between | stretch
+-Only relevant if wrap property is set
+
+	justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+-This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+-NB: Goes in the container class.
+
+
+	flex-wrap: wrap | nowrap | wrapreverse
+-If the element along a row exceeds the requirements then we make sure its wrapped to allow extention to the next row.
+-Used with the container itself
+
+	flex-basis: <length>
+-Instead of using width use flex-basis instead with the length represented in percentages.
+
+
+
+	flex: <integer>
+-If the display of the parent element is flex: row. The child blocks will take integers that will reflect their size in ration to the available sizes
+		
+	.container{
+		display: flex; #will make the child blocks in row format
+	}
+	.container div{
+
+	}
+	.block-1{
+		flex:2; #since box-2 is 1 this will be twice as big
+		order:1 #along the row this will be the first to apper
+	}
+	.block-2{
+		flex:1;
+		order:2
+	}
+
+
+	<div class="container">
+		<div class="block-1"> This is the first block </div>
+		<div class="block-2"> This is the first block </div>
+	</div>
+
+
+
+	order: <integer> 
+-Examplained in flex above
+
+
+-align-self: flex-start | flex-end | center
+
+
+-flex-grow: <number>	flex-shrink: <number> : These two inherit from flex property. Instead use flex to capture these two features.

@@ -1,0 +1,154 @@
+/*
+Some elements do have predifined margin and padding. To avoid the confsion
+we would zero out these settings for all the elements as described below. Note
+* means all the elements
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+*/
+
+body {
+	background-color:lightgrey;
+	color: grey;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+
+	/* Above font declarations is same as */
+	font: normal 16px Arial, Helvetica, sans-serif;
+
+	line-height: 1.6em; /* height between the texts, separates lines. */
+	margin: 0px;
+}
+
+/*
+	When To Use Class And ID
+- Use id to elements that are very unique and may only occure once in a script while class
+  is best for naming elements that may inherit same properties. For example in cases  where
+  we might declare a list it best to use class names since they will all have the same styling
+  properties.
+*/
+
+/* clear the floating objects */
+.clr{
+	clear: both;
+}
+
+.container {
+	width: 80%; /*use percentages with things relating to size to enable responsive ness of the webpage*/
+	margin: auto;
+}
+
+.box-1 {
+	background-color: #333;
+	color: white;
+
+	border-right: 5px red solid;
+}
+
+.box-1 h1 {
+	font-family: Tahoma;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	word-spacing: 1em;
+}
+
+.box-2 {
+	border: 5px dotted #ccc;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.categories {
+	border: 5px #ccc solid;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.categories h2 {
+	text-align: center;
+}
+
+.categories ul {
+	list-style: square; /*we can do without the style by using 'none' instead*/
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover{
+	color: red;
+}
+a:active {
+	color: green;
+}
+a:visited{
+	color: darkblue;
+}
+
+.categories li{
+	list-style-image: url("../link of image to use. we can resize the image");
+}
+
+.my-form .form-group {
+	padding-bottom: 15px;
+}
+
+.my-form label{
+	display: block;
+}
+
+.my-form input[type="text"], .my-form input[type="email"], .my-form textarea {
+	padding: 8px;
+	width: 100%;
+}
+
+.block{
+	float: left;
+	width: 33.3%;
+	box-sizing: border-box; /*allows for same size irrespective of boarder and padding declarations*/
+}
+
+#main-content{
+	float: left;
+	width: 70%;
+}
+
+#side-content{
+	float: right;
+	width: 30%;
+}
+
+/*
+	POSITIONING IN CSS
+Static - This is the default if the position is not defined.
+Relative - Means positioned relative to its normal position. We can then use things like top bottom etc
+Absolute - Within a relative position then an absolute can be used to move things
+Fixed - Mostly for navigation bars that should not be moved.
+Initial -
+Inherit -
+
+*/
+
+.my-list li:first-child{
+	background: red;
+}
+
+.my-list li:last-child{
+	background: blue;
+}
+
+.my-list li:nth-child(5){
+	background: yellow;
+}
+
+.my-list li:nth-child(even){
+	background: grey;
+}

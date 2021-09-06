@@ -1,0 +1,11 @@
+conda list       #to list installed packages
+conda create --name enviroment flask sqlachemy #when creating conda enviroment we should atleat mention one package to allow creation
+conda create --name my_app27 python=2.7 flask  #we can also create the virtual enviroment specifying the python version we would like to use
+source activate enviroment     #to activate an enviroment but in windows we exclude the source command
+conda activate enviroment #We can also do this in windows to activate the enviroment
+source deactivate   #to deactivate the current active enviroment. In windows we exclude the source command
+
+conda env list   #to list the enviroments
+conda remove --name my_app --all  #to remove the enviroment named my_app
+
+NB: It is only possible to make an enviroment if you are connected to the internet.

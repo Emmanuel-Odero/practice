@@ -1,0 +1,5 @@
+- Revise on the most important cross validation techniques and how their applications.
+- document on how to do encoding for categorical data.
+- differenciate btwn fit, transform and fit_transform.
+- make a referrence for dates
+- write code that can allow parallel computing

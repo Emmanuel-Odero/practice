@@ -1,0 +1,23 @@
+-To enable using packages in sublime go to tools then command pallettes the type install. When a pop up
+of install package control gets highlighted press enter. The next step is to type install again and a 
+hightlight on package control : install package press enter. After these two process we will be able to 
+start adding our desired packages by searching throught the command palette.
+-Suggested packages to install include:
+	*SublimeLint - this plugin checks for errors in your code while you write it.
+
+-To list installed packages on the command palette type "list packages" then select the option to list
+the packages under package control. The pop up will change to list the installed packages.
+-To upgrage on command palette type "upgrade package" then on pop up of control package : upgrage package
+press enter to change the pop up which will list packages allowing install.
+-To remove package just like above type remove package then under package control select the remove package
+option.
+
+-Following are the steps to installing kite plugin that allows for autocompletion plus other capabilities
+for python and javascript.
+	*Download and install Kite service from home Page of Kite site.
+	*Run installed Kite. You need always run Kite service, when you use Kite.
+	*Download Kite Sublime Text plugin from here.
+	*Place Kite.sublime-package archive to <path_to_your_Sublime_Text_folder>\Data\Installed Packages. For example, I add Kite.sublime-package to D:\Sublime Text 3 x64\Data\Installed Packages folder.
+	*If you use Anaconda or any conflicted plugins, Kite will prompt you to change your settings.
+
+-

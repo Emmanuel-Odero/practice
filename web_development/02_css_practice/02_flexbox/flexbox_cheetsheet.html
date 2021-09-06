@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flexbox Cheetsheet</title>
+
+	<style type="text/css">
+
+		/*This makes screen transformation once the width goes below the set value.*/
+		@media(min-width: 800px){
+		.container-1 {
+			display: flex; 
+			/*align-items: */ 
+			flex-direction: row; /*by default this is normally a row.*/
+		}
+		.container-2{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+		.container-3{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}	
+		}
+		
+
+		.container-1 div, .container-2 div, .container-3 div{
+			border: 1px #ccc solid;
+			padding: 10px;
+		}
+
+		.box-1{
+		flex:2;
+		order:2;
+		}
+
+		.box-2{
+		flex:1;
+		order:3;
+		}
+
+		.box-3{
+		flex:1;
+		order:1;
+		}
+
+		.block-1{
+			flex-basis: 30%; /* Use this instead of width */
+		}
+		.block-2{
+			flex-basis: 20%;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container-1">
+		<div class="box-1">
+			<h1>First Div</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation
+		</div>
+		<div class="box-2">
+			<h1>Second Div</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation
+		</div>
+		<div class="box-3">
+			<h1>Third Div</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation
+		</div>
+	</div>
+
+	<div class="container-2">
+		<div class="block-1">
+			<h1>First Div</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation
+		</div>
+		<div class="block-1">
+			<h1>Second Div</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation
+		</div>
+		<div class="block-1">
+			<h1>Third Div</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation
+		</div>
+	</div>
+	<div class="container-3">
+		<div class="block-2">
+			<h1>The Begna</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor </p>
+		</div>
+		<div class="block-2">
+			<h1>The Begna</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor </p>
+		</div>
+		<div class="block-2">
+			<h1>The Begna</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor </p>
+		</div>
+		<div class="block-2">
+			<h1>The Begna</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor </p>
+		</div>
+		<div class="block-2">
+			<h1>The Begna</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor </p>
+		</div>
+		<div class="block-2">
+			<h1>The Begna</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor </p>
+		</div>
+		<div class="block-2">
+			<h1>The Begna</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor </p>
+		</div>
+		<div class="block-2">
+			<h1>The Begna</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor </p>
+		</div>
+		
+	</div>
+
+</body>
+</html>

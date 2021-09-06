@@ -1,0 +1,10 @@
+Virtualenv is used to manage projects in different enviroments.
+
+pip install virtualenv             #to install the module
+virtualenv project1_env            #to create a new enviroment
+source project1_env/bin/activate   #to activate the virtual enviroment
+project1_env/Scripts/activate      #in windows this is how we activate the virtual env.
+which python                       #gives the path of the python we are currently runnng on. inshort the virtualenv
+pip freeze --local                 #to list the packages in the local enviroment
+deactivate                         #to exit the local enviroment
+virtualenv -p /usr/bin/python2.6 py26_env  #this specifies which python we would like to usee like in this case we are using python2.6

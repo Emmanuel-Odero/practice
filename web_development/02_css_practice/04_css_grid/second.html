@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Second Grid Practice</title>
+	<style type="text/css">
+		.container {
+			display: grid;
+			grid-template: 70px auto 70px/ repeat(3, 1fr);
+		}
+		.header{
+			grid-column: 1/-1;
+			background-color: green;
+			display: grid;
+			grid-template: 100%/ reapet(3, ) ;
+		}
+		.aside {
+			grid-column: 1/2;
+			background-color: red;
+		}
+		.main {
+			grid-column: 2/4;
+			background-color: blue;
+		}
+		.footer {
+			grid-column: 1/-1;
+			background-color: black;
+		}
+
+		/* Design the header section which is also a grid 
+				we have two clasess in the header logo and site-links */
+		.logo {
+			grid-column: 1/2;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				Logo
+			</div>
+			<div class="site_links">
+				Our links for the site goes here
+			</div>
+		</div>
+		<div class="aside">
+			This is the side bar
+		</div>
+		<div class="main">
+			This is the main page
+		</div>
+		<div class="footer">
+			This is our footer
+		</div>
+	</div>
+</body>
+</html>

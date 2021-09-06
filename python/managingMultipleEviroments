@@ -1,0 +1,27 @@
+NB: This topic wasn't well understood But the Idea has been noted down here
+
+Conda is similar to pip but more things can get done simply using conda. 
+
+In projects we make a directory named my_project. This is done from the main page projects.
+
+We first create an enviroment with the packages we would like it to contain. "conda create --name my_project_env flask sqlachemy pandas numpy". We can add and remove the packages as we wish depending by our project requirements.
+
+ We can export the packages installed in this envroment like this "conda env export > enviroment.yaml"
+ 
+ Having made this .yaml file someone else can grab this enviroment and make the same with just one command.
+"conda env create -f enviroment.yaml" to create the same enviroment as the file.
+ 
+We can navigate to our enviroment and create two directories where we are going to place our scripts. for example C:/anaconda3/envs/my_projects can be an enviroment where we can can create our enviroment variables
+
+we make these two directories "mkdir -p etc/conda/activate.d" and the other as "mkdir -p etc/conda/deactivate.d".
+
+We now create a file "touch etc/conda/activate.d/env_vars.sh" and "touch etc/conda/deactivate.d/env_vars.sh".we now need to create variables to activate and deactivate.
+
+example is in the activation file we can create a variable like this "#!/bin/sh  => this is the first line to know this is a bash file"
+next line "export DATABASE_URI="postgresql://user:pass@db_server:5432/testdb"".
+Meaning when we activate this enviroment we then have this database property set
+
+in the deactivate file we can specify file type in the first line list above then "unset DATABASE_URL".
+
+
+

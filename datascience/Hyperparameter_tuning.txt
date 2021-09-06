@@ -1,0 +1,25 @@
+There are several approaches to hyperparameter tuning:
+1. Manual: Select hyperparameters based on intuition/experience/guessing, train the model with 
+the hyperparameters, and score on the validation data. Repeat the process until you run out of 
+patience or are satisfied with the results.
+
+2. Grid Search: Try out a bunch of hyperparameters from a given set of hyperparameters, and see
+ what works best. Set up a grid of hyperparameter values and for each combination, train a model
+ and score on the validation data. In this approach, every single combination of hyperparameters 
+values is tried which can be very inefficient! It can be easily parallelized however, it's 
+computationally expensive.
+
+3. Random search: Try out a bunch of random hyperparameters from a uniform distribution over 
+some hyperparameter space, and see what works best. Set up a grid of hyperparameter values and 
+select random combinations to train the model and score. The number of search iterations is set
+ based on time/resources. It can be easily parallelized. Just as simple as grid search, but a 
+bit better performance. While it gives better performance than Grid Search, it is still just as 
+computationally intensive.
+
+4. Automated Hyperparameter Tuning: Use of methods such as Gradient Descent, Bayesian Optimization,
+a or evolutionary algorithms to conduct a guided search for the best hyperparameters.
+
+Example of hyperparameters include -
+	The learning rate for training a neural network.
+	The C and sigma hyperparameters for support vector machines.
+	The k in k-nearest neighbors.

@@ -1,0 +1,3 @@
+Data Science Site - https://www.saedsayad.com/bivariate_analysis.htm
+Twitter API in action - https://www.youtube.com/watch?v=EAvEa5fLwRA&feature=youtu.be
+project on EDA - https://www.kaggle.com/etakla/exploring-the-dataset-bivariate-analysis

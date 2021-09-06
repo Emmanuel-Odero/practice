@@ -1,0 +1,22 @@
+ride_id,seat_number,payment_method,payment_receipt,travel_date,travel_time,travel_from,travel_to,car_type,max_capacity
+1442,15A,Mpesa,UZUEHCBUSO,17-10-17,7:15,Migori,Nairobi,Bus,49
+5437,14A,Mpesa,TIHLBUSGTE,19-11-17,7:12,Migori,Nairobi,Bus,49
+5710,8B,Mpesa,EQX8Q5G19O,26-11-17,7:05,Keroka,Nairobi,Bus,49
+5777,19A,Mpesa,SGP18CL0ME,27-11-17,7:10,Homa Bay,Nairobi,Bus,49
+5778,11A,Mpesa,BM97HFRGL9,27-11-17,7:12,Migori,Nairobi,Bus,49
+5777,18B,Mpesa,B6PBDU30IZ,27-11-17,7:10,Homa Bay,Nairobi,Bus,49
+5777,14A,Mpesa,MZHGDGS6QZ,27-11-17,7:10,Homa Bay,Nairobi,Bus,49
+5778,25,Mpesa,MYVTYFNXDZ,27-11-17,7:12,Migori,Nairobi,Bus,49
+5778,21B,,TE1WYK1NYE,27-11-17,7:12,Migori,Nairobi,Bus,49
+5781,22A,Mpesa,VGG7Q3MVJX,27-11-17,7:09,Homa Bay,Nairobi,Bus,49
+5781,18B,Mpesa,YJ7JFHOGKA,27-11-17,7:09,Homa Bay,Nairobi,Bus,49
+5781,17B,Mpesa,4JQOSC881A,27-11-17,7:09,Homa Bay,Nairobi,Bus,49
+5784,1X,Mpesa,3OPU23FHRB,20-04-18,5:10,Kisii,Nairobi,shuttle,11
+5789,1X,Mpesa,BPRX4UMFFN,20-04-18,9:50,Kisii,Nairobi,shuttle,11
+5778,3A,Mpesa,JDD4ZL64LP,27-11-17,7:12,Migori,Nairobi,Bus,49
+5790,1B,Mpesa,DC8ABRSXXK,20-04-18,7:06,Kisii,Nairobi,Bus,49
+5791,1,Mpesa,HGQURN0SZS,20-04-18,6:00,Kisii,Nairobi,shuttle,11
+5792,1,,8D9V8HK2FC,20-04-18,5:50,Kisii,Nairobi,shuttle,11
+5793,1,Mpesa,TTZQDYZHAB,20-04-18,10:58,Kisii,Nairobi,shuttle,11
+5790,4A,Mpesa,F8VBKYCXPL,20-04-18,7:06,Kisii,Nairobi,Bus,49
+5794,1,Mpesa,ETNVCDEZLR,20-04-18,6:50,Kisii,Nairobi,shuttle,11

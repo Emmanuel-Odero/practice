@@ -1,0 +1,50 @@
+﻿Public School Exam Scores
+
+
+
+
+Context
+In this case study, we have a sample of marks secured by the students in an SAT Exam.
+
+
+Overview
+This data set includes scores from three exams and a variety of personal, social, and economic factors that have interaction effects upon them.
+Dataset
+Data Source [Link] 
+
+
+Questions
+
+
+Using Tableau, create visualizations that will help answer the following research questions.
+
+
+1. What were the average scores for the math, reading and writing scores?
+
+
+2. What were the highest scores for the math scores where the reading score was greater than writing scores?
+
+
+3. Provide comparisons for lunch and the total aggregate score for the students.
+
+
+4. What was the performance of male students compared to females students in different subjects?
+
+
+5. How effective is the test preparation course?
+
+
+6. Which major factors contributed to test outcomes?
+
+
+7. What would be the best way to improve student scores on each test?
+
+
+8. What other patterns and interactions in the data can you find?
+
+
+
+
+
+
+Source: [Link]

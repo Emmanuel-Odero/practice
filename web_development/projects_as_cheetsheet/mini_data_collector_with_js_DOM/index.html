@@ -1,0 +1,38 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header class='main-header'>	
+	<h1>IEBC Registration</h1>
+</header>
+<section id='main-section'>	
+		<form id="registrationForm">	
+			<h2>Registration Form</h2>
+			<div class='msg'></div>  <!--To display error on form filling-->
+			<div>	
+				<label for='name' class='form-label'>Full Name</label><br>
+				<input type="text" id="name" placeholder='firstname lastname'>
+			</div>
+			<div>	
+				<label for='email' class='form-label'>Email</label><br>
+				<input type="email" id="email">
+			</div>
+			<div >	
+				<label for='idNumber' class='form-label'>ID Number</label><br>
+				<input type="number" id="idNumber">
+			</div>
+			<input class="submit-btn" type="submit" value="Submit">
+		</form>
+		<ul id="users"></ul> <!-- use this to fill the data entered-->
+</section>
+<footer id='main-footer'>
+	
+</footer>
+<script type="text/javascript" src='js/main.js'></script>
+</body>
+</html>

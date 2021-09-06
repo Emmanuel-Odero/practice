@@ -1,0 +1,81 @@
+﻿Data Analysis and Formatting 
+Visualizations Exercise
+
+
+Overview 
+
+
+As a Data Science Consultant, you are tasked with helping Organization X determine the conditions for hosting a TED conference with the objective of creating the most engagement. Provided are datasets that contain TED Talks held in the past. 
+Provide a recommendation for hosting a TED talk that will lead to a high engagement based on an objective account from the dataset. 
+* You will need to create the respective visualizations using Tableau then save your workbook to the tableau public website. 
+* Provide a recommendation on a Google Docs document. Then submit the shared link for the document on the submission link provided. Remember to share the link to your Tableau Workbook in this document.
+
+
+Context
+
+
+These datasets contain information about all audio-video recordings of TED Talks uploaded to the official TED.com website until September 2012. The TED favorites dataset contains information about the videos, registered users have favorited. The TED Talks dataset contains information about all talks including the number of views, number of comments, descriptions, speakers, and titles.
+
+
+Glossary
+
+
+* id: The ID of the talk. Has no inherent meaning. Values obtained by resetting index.
+* url: Url pointing to the talk on http://www.ted.com
+* title: The title of the talk
+* description: Short description of the talk
+* transcript: The human-made transcript in English of the talk as available on the TED website
+* related_tags: The related tags that refer to the talk assigned by TED editorial staff
+* related_themes: The related themes that refer to the talk assigned by TED editorial staff (as of April 2013, these themes are no longer visible on the TED website)
+* related_videos: A list of videos that are related to the given talk, assigned by TED editorial staff
+* ted_event: The name of the event in which the talk was presented
+* speaker: The full name of the speaker of the talk
+* publish_date: The day on which the talk was published
+* film_date: The day on which the talk was filmed
+* views: The total number of views of the talk at the time of crawling
+* comments: The number of comments on the talk
+* TED Favorites
+* talk: Name of the talk being favorited.
+* user: The ID of the user favoriting the talk. Has no inherent meaning. This ID is INDEPENDENT of the talk ID of the aforementioned Talks dataset.
+
+
+Questions 
+
+
+Use the following questions as a guide:
+1. Determine the relationship between the views and the comments. What does this relationship mean?
+2. Do the majority of the TED talks contain more than 500 comments? 
+3. Determine the nature of the distribution of comments. 
+4. What were the minimum and maximum no of comments on a TED talk?
+5. What was the average no. of comments on every TED Talk. Assuming that the comments are constructive criticism, what can you conclude about the TED Online Community?
+6. What was the average and median no. of views on TED Talks? What does this mean?
+7. Which talk was the most popular TED Talk of all time? What can you say about this talk?
+8. What time during the year were most TED Conferences with the most views with held? 
+9. What time during the year were most TED Conferences with the least comments held?
+10. What were the most popular days for conducting TED and TEDx conferences? 
+11. Which occupations did the most popular TED Speakers have?
+12. On average how many speakers spoke in a TED Talk?
+13. Which TED Events tend to hold the most number of TED.com upload worthy events? 
+14. Which were the most popular themes in the TED conferences?
+15. Study the distribution of the most popular TED talks?
+16. Find out the relationship between rating and views? What does the outcome mean?
+17. What were the most often used words by TED speakers?
+18. What kind of topics attract maximum discussion and debate? (in the form of comments)
+
+
+
+
+Datasets
+
+
+1. TED Main Dataset [Link]
+2. TED Transcripts [Link]
+3. TED Talks [Link]
+
+
+
+
+Acknowledgments
+
+
+The original dataset was obtained from https://www.idiap.ch/dataset/ted and was in the JSON Format.
