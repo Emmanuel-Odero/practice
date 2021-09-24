@@ -1,0 +1,15 @@
+
+
+/* This is designing the sidebar when the user is already logged in */
+.sidebar li .submenu{ 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	padding-left: 1rem; 
+	padding-right: 1rem;
+}
+
+
+.active {
+	background-color: red;
+}
