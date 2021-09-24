@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width">
+
+	<!--  link to google fonts for this case Lato -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- link the offline bootstrap file to our site -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+
+	<!-- link our custom css file  -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css')}}">
+
+	{% if title %}
+		<title>{{ title }}</title>
+	{% else %}
+		<title>NRCF Lib</title>
+	{% endif%}
+	
+</head>
+<body>
+	<div class="row">
+		<!--Navbar -->
+		<div class="col-md-4">
+				<h1 class="logo">Menu</h1>
+				<nav class="sidebar card py-2 mb-8">
+					<ul class="nav flex-column" id="nav_accordion">
+						<li class="nav-item">
+							<a class="nav-link" href="#"> Dashboard </a>
+						</li>
+						<li class="nav-item has-submenu">
+							<a class="nav-link" href="#"> Books + </a>
+							<ul class="submenu collapse">
+								<li {% if page == 'create_book' %} class="active"{% endif %}><a class="nav-link" href="{{ url_for('books.new_book')}}">Add Book </a></li>
+								<li><a class="nav-link" href="{{ url_for('books.books_list')}}">Search Book</a></li>
+							</ul>
+						</li>
+						<li class="nav-item has-submenu">
+							<a class="nav-link" href="#"> Students +</a>
+							<ul class="submenu collapse">
+								<li><a class="nav-link" href="#">Add Student </a></li>
+								<li><a class="nav-link" href="#">Search Student </a></li>
+							</ul>
+						</li>
+						<li class="nav-item has-submenu">
+							<a class="nav-link" href="#"> Transactions +</a>
+							<ul class="submenu collapse">
+								<li><a class="nav-link" href="#">Borrow Book </a></li>
+								<li><a class="nav-link" href="#">Return Book </a></li>
+							</ul>
+						</li>
+						<li class="nav-item has-submenu">
+							<a class="nav-link" href="#"> Settings +</a>
+							<ul class="submenu collapse">
+								<li><a class="nav-link" href="{{ url_for('users.account')}}">My Account</a></li>
+								<li><a class="nav-link" href="{{ url_for('users.logout')}}">Logout </a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+		</div>
+
+		<!-- Main Section -->
+		<div class="col-md-8">
+			{% with messages = get_flashed_messages(with_categories=true) %}
+				{% if messages %}
+					{% for category, message in messages %}
+						<div class="alert alert-{{ category }}">
+							{{ message }}
+						</div>
+					{% endfor %}
+				{% endif%}
+			{% endwith %}
+			{% block content%}{% endblock content%}
+		</div>
+	</div>
+
+	
+
+	
+
+	<!-- footer section -->
+	
+
+	<!-- Link the offline javascript for responsive bootstrap classes -->
+	<script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+
+	<!-- link our offline js for styling and othe possible activities -->
+	<script type="text/javascript" src="{{ url_for('static', filename='styles/main.js') }}"></script>
+
+</body>
+</html>
