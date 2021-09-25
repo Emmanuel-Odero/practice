@@ -1,0 +1,6 @@
+-Go to the site windows.php.net/downloads, Either safe thread or unsafe download the zip file
+then extract to the location of choice to download the php. Ideally use C:/php
+-Next step is to configure our enviroment variables to allow use of php on the command line
+-On pressing windows key press enviroment to edit the system enviroment variables.
+-After adding our extracted php to enviroment variable check using "echo %path%" from the 
+command line to see if it was added.
