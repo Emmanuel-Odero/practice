@@ -1,13 +1,16 @@
 /*
-Some elements do have predifined margin and padding. To avoid the confsion
+Some elements do have predifined margin and padding. To avoid the confusion
 we would zero out these settings for all the elements as described below. Note
 * means all the elements
+*/
+
 * {
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
 
-*/
+
 
 body {
 	background-color:lightgrey;
