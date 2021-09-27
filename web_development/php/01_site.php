@@ -106,6 +106,7 @@
 		echo "The current number is => $currentNumber <br>";
 		echo "Absolute value of the current number is => abs($currentNumber)<br>";
 
+		echo "We can use pow(2, 4) for 2 raised to power 4, sqrt(), min(), max(), round(), ceil(), floor()";
 
 
 	?>
