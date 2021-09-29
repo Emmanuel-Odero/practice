@@ -12,6 +12,10 @@
 
 	include "useful-tools.php"; 
 	sayHi();
+	echo "<br>";
+
+	//importing a variable input
+	echo "<br>The kenya president is $kenyaPresident.";
 
 
 	?>
