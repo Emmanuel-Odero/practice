@@ -7,7 +7,7 @@
 	<!-- Getting User Input -->
 	
 
-	<form action="02_site.php" method="get">
+	<form action="02_gettingUserInput.php" method="get">
 		Name: <input type="text" name="name">
 		<br>
 		Age: <input type="number" name="age">
